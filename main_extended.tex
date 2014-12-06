@@ -1,0 +1,234 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2012 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+\usepackage{eurosym}
+% moderncv themes
+\moderncvstyle{casual}                        % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\renewcommand{\familydefault}{\sfdefault}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                  % if you are not using xelatex ou lualatex, replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}           % if you want to change the width of the column with the dates
+%\setlength{\maketitlenamewidth}{10cm}        % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+\usepackage{footmisc}
+\urlstyle{same}
+% personal data
+\firstname{{\fontsize{1cm}{1em}\selectfont Edoardo Giovanni}}
+\familyname{{\fontsize{1cm}{1em}\selectfont Colombo}}
+\title{résumé}               % optional, remove the line if not wanted
+% \address{Via Mecenate 3/1, Milan}{20138}    % optional, remove the line if not wanted
+% \mobile{+39~(347)~840~0338}                     % optional, remove the line if not wanted
+% \phone{+39~(02)~7010~7109}                      % optional, remove the line if not wanted
+% \email{edo.gcolombo@gmail.com}                          % optional, remove the line if not wanted
+% \homepage{edoardocolombo.me}    % optional, remove the line if not wanted
+% % \quote{Done is better than perfect.}                 % optional, remove the line if not wanted
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\makecvtitle
+
+\section{Personal informations}
+\cvitem{email}{\href{mailto:edo.gcolombo@gmail.com}{edo.gcolombo@gmail.com}}
+\cvitem{mobile}{+33 7 62 30 14 83}
+\cvitem{residence}{Via Mecenate, 3/1, 20138, Milan, Italy}
+\cvitem{web}{\href{http://edoardocolombo.me/}{http://edoardocolombo.me/}}
+
+\section{Education}
+\cventry{Nov 2013\\Feb 2014}{Visiting Student}{Royal Holloway, University of London}{Egham}{}{Working on Master Thesis with Prof. Lorenzo Cavallaro.}
+\cventry{2011--2014}{ASP Diploma}{Alta Scuola Politecnica}{Milan}{}{Enrolled in the Alta Scuola Politecnica Programme$^1$}\let\thefootnote\relax\footnote{$^1$ More info at \url{www.asp-poli.it}}
+\cventry{2012--2014}{Master of Science in Computer Science}{University of Illinois at Chicago}{}{}{GPA: 4.0/4.}
+\cventry{2011--2014}{Master in Engineering of Computing Systems}{Politecnico di Milano}{Milan}{}{110/110}
+\cventry{2008--2011}{Bachelor in Engineering of Computing Systems}{Politecnico di Milano}{Milan}{103/110}{}
+\cventry{2004-2008}{Scientific Lyceum Diploma}{Liceo Scientifico Leonardo da Vinci}{Milan}{100/100}{}
+
+\section{Conferences}
+\cventry{24 April 2013}{Open Data on the Web}{W3C}{Google Campus London}{United Kingdom}{
+  Lightning talk: \emph{Empowering the E-government data life cycle}
+}
+
+\section{Work Experiences} % (fold)
+\label{sec:experience}
+\cventry{2014-present}{Software Engineer and Tech Leader}{Amadeus}{Sophia Antipolis}{France}{
+Amadeus operates in 195 countries with a worldwide team of more than 11,000 people.  For the year endedDecember 31, 2012 the company reported revenues of \euro{2,910.4} million and EBITDA of \euro{1,107.7}million. %
+As \emph{Tech Leader} in the Lufthansa implementation team, I was responsible for driving the whole team's%
+technological choices. I lead the team migration to Atlassian Stash, and covered the role of%
+repository administrator and code reviewer. I was also nominated Security Expert, being charged with the%
+responsibility offixing the vulnerabilities that affected the web application.%
+}
+\cventry{2012-2013}{\LaTeX{} Instructor}{Politecnico di Milano}{Milan}{Italy}{
+  I was asked by Prof. Marco D. Santambrogio to give \LaTeX{} lessons to his biomedical engineering students. It was a %
+  very positive and challenging experience, which let me further discover my passion for teaching.
+}
+\cventry{2012}{Web Developer}{Pratiche Sistemiche}{Milan}{Italy}{
+  Pratiche Sistemiche is a counselling association based in Milan. I developed and currently
+  maintain their website, of which the implementation required HTML5, CSS3, Javascript (jQuery)
+  and PHP.
+}
+\cventry{2012}{Chief Barman}{Turné Eventi}{Milan}{}{
+  Barmen coordination and management for a carnival party held each year with thousands of attendances.
+}
+\cventry{2008--2012}{Private Teacher}{Lyceum Students}{Milan}{}{Private lessons of Mathematics and Physics}
+\cventry{July 2008}{Shop Assistant}{Energie}{Milan}{Clothing shop}{}
+
+% section experiences (end)
+
+\section{Master Thesis}
+\label{sec:master}
+\cvitem{field}{Computer Security}
+\cvitem{title}{Cerberus: Detection and Characterization of Automatically-Generated Malicious Domains}
+\cvitem{description}{%
+Botnets are networks of infected machines (the bots) controlled %
+by an external entity, the botmaster, who uses this infrastructure to %
+carry out malicious activities. The Command and Control Server is the machine %
+employed by the botmaster to dispatch orders to and gather data from the bots, %
+and the communication is established through a variety of distributed or %
+centralized protocols, which can vary from botnet to botnet. In the case of %
+DGA-based botnets, a Domain Generation Algorithm (DGA) is used to find the %
+\emph{rendezvous} point between the \emph{bots} and the \emph{botmaster}. %
+Botnets represent one of the most widespread and dangerous threats on the Internet and %
+therefore it is natural that researchers from both the industry and the academia %
+are striving to mitigate this phenomenon. %
+We propose Cerberus, an automated system based on machine learning, capable to automatically discover new botnets and use this %
+knowledge to detect and characterize malicious activities. Cerberus analyzes passive %
+DNS data, free of any privacy issues, which allows the system to be easily %
+deployable, and uses an unsupervised approach, i.e., Cerberus needs no %
+\emph{a priori} knowledge. In fact the system applies a series of filters to %
+discard legitimate domains while keeping domains generated by AGDs and likely to be malicious. Then, Cerberus %
+keeps record of the activity related to the IP addresses of those domains, and, %
+after $\Delta$ time, it is able to isolate clusters of domains belonging to the same %
+malicious activity. This knowledge is later used to train a classifier that will analyze %
+new DNS data for detection. %
+We tested our system in the wild by analyzing one week of real passive DNS data. %
+Cerberus was able to detect 47 new clusters of malicious activities: Well %
+known botnets as \texttt{Jadtre}, \texttt{Sality} and \texttt{Palevo} were found among the others. %
+Moreover the tests we ran on the classifier showed an overall accuracy of 93\%, proving %
+the effectiveness of the system.%%
+}
+\cvitem{supervisor}{Prof. Lorenzo Cavallaro, Ph.D., Royal Holloway, University of London}
+\cvitem{supervisor}{Prof. Federico Maggi, Ph.D., Politecnico di Milano}
+\cvitem{supervisor}{Prof. Stefano Zanero, Ph.D., Politecnico di Milano}
+% section master (end)
+
+
+\section{Bachelor Thesis}
+\label{sec:bachelor}
+\cvitem{field}{Software Engineering project}
+\cvitem{title}{\emph{L'Isola dei dinosauri}}
+\cvitem{description}{As bachelor thesis, since AY 2010/2011, all of the Engineering of Computing Systems students are assigned a software engineering project. Groups of two up to three people are
+made and a Java implementation featuring RMI and socket communication is required. \emph{L'Isola
+dei dinosauri}(Dinosaur Island) was an adaptation from Facebook engineering puzzle Dinosaur
+Island. It resulted in a multiplayer turn-based strategic game where dinosaurs had to survive in a
+hostile island.}
+\cvitem{supervisor}{Prof. Luciano Baresi, Ph.D., Politecnico di Milano}
+% section bachelor (end)
+
+\section{Projects}
+\cventry{since 2011}{EMIMT}{Alta Scuola Politecnica}{}{}{%
+E-Government meets integration and mining techniques. \newline{}
+Alta Scuola Politecnica selects 150 students each year among the faculties of Engineering,
+Architecture and Design at Politecnico di Milano and Politecnico di Torino. Students are divided
+into multidisciplinary groups and are assigned a project. I am currently working at the design and
+implementation of a web application aiming at publishing the Italian public administrations
+balance sheets, offering data visualizations to the citizens. The  backend
+is being implemented using Sinatra and PostgreSQL.
+}
+
+\cventry{Sept. 2012}{Monster Mash}{University of Illinois at Chicago}{}{}{%
+Design and implementation of an application to investigate the popularity of different kinds of monsters over the years in movies.
+We made use of the Internet Movie DataBase, enabling the user to filter out the data and look at the trend. The project was run on the university's Cyber Commons wall, a tiled display with touchscreen and it was implemented using Java and Processing.
+}
+
+\cventry{Oct. 2012}{Objects in the rear view mirror}{University of Illinois at Chicago}{}{}{%
+Design and implementation of an application to investigate highway deaths from the National Highway Traffic Safety Administration, and in particular their Fatality Analysis Reporting System.
+Using Modest Maps library we plotted the geolocalized data, enabling the user to set custom filters, to visualize the trend, navigate the map. As with the previous project it was implemented
+using Java and Processing and it was run on the Cyber Commons wall.
+}
+
+\cventry{Nov. 2012}{When the wind blows}{University of Illinois at Chicago}{}{}{%
+ Design and implementation of a tool that could help a hypothetical data analyst to understand the
+ epidemic spreading of a disease, by looking at the evolution of the messages written by the
+ population.
+ The tool made possible to add geolocalized markers on the map, customize their colors, and filter
+ them by up to four keywords. To achieve speed and usability, we exploited the full text search
+ functions of MySQL. The implementation, as with the two previous projects, was realized with
+ Java and Processing and was run on the Cyber Commons wall.
+}
+
+\cventry{June 2012}{MUSE}{Morphone USer Experience}{}{}{%
+Morphone is a NECST Lab$^*$ project for a context-aware Android-based mobile operating system. Its
+ecosystem is composed, among the others, by MPower, an adaptive power management system. I worked
+on a feedback retrieval system, able to retrieve user's feedback on MPower actions (e.g.
+diminishing screen brightness) and sending the data to a server in XML format.\\
+$^*$Novel and Emerging Computer Science Technologies, laboratory directed by Professors Marco Domenico Santambrogio (computer architecture and design) and Stefano Zanero (computer security).
+}
+
+\section{Scholarships}
+\cvitem{2011-2012}{Alta Scuola Politecnica scholarship.}
+
+\section{Languages} % (fold)
+\label{sec:languages}
+\cvitemwithcomment{US English}{C2}{}
+\cvitemwithcomment{French}{A2}{Common European Framework}
+\cvitemwithcomment{Italian}{Mother tongue}{}
+
+% section languages (end)
+
+\section{Skills} % (fold)
+
+\label{sec:computer_skills}
+\cvdoubleitem{Programming}{$\Rightarrow$ Python, R, Javascript, Java}{OSs}{$\Rightarrow$ MAC OSX, Linux}
+\cvdoubleitem{Markup}{$\Rightarrow$ HTML, CSS, XML, SASS}{Querying}{$\Rightarrow$ SQL, MongoDB}
+\cvdoubleitem{Tools}{$\Rightarrow$ Eclipse, git, Stash, Jira}{Typesetting}{$\Rightarrow$ \LaTeX, R markdown}
+% section computer_skills (end)
+
+\section{Coursera, The Data Science Signature Track}
+\cventry{2014}{The Data Scientist’s Toolbox}{Johns Hopkins University}{}{Verified Certificate https://www.coursera.org/verify/E46NGXAT5Z}{\emph{with distinction}}
+\cventry{2014}{R Programming}{Johns Hopkins University}{}{Verified Certificate https://www.coursera.org/verify/4MD9X7DT2X}{\emph{with distinction}}
+\cventry{2014}{Reproducible Research}{Johns Hopkins University}{}{Verified Certificate https://www.coursera.org/verify/PM8HFN4FT9}{\emph{with distinction}}
+\cventry{2014}{Exploratory Data Analysis}{Johns Hopkins University}{}{Verified Certificate https://www.coursera.org/verify/TPR5D8DFT6}{\emph{with distinction}}
+\cventry{2014}{Getting and Cleaning Data}{Johns Hopkins University}{}{Verified Certificate https://www.coursera.org/verify/7Y45SKR6TN}{}
+\cventry{2014}{Statistical Inference}{Johns Hopkins University}{}{Verified Certificate https://www.coursera.org/verify/YWWNTFAND8}{}
+
+\section{Other Experiences} % (fold)
+\label{sec:traveling_exp}
+\cventry{Sept. 2011 \\ June 2012}{HANDICAP...su la testa}{Swimming assistant}{Milan}{Italy}{
+  I volunteered for HANDICAP...su la testa (HANDICAP...keep your head up), a no-profit
+  organization helping people affected by various kind of mental impairments (e.g. Down syndrome, autism). My contribution consisted in assisting and playing with the disabled in a swimming pool.
+}
+
+\cventry{July--August 2008}{American Conservation Experience}{}{Flagstaff, AZ}{United States}{I
+volunteered for a no-profit organization, ``American Conservation Experience'', aiming at nature
+and wildlife preservation. Whilst our ``base'' was located in Flagstaff AZ, we were involved in
+several projects featuring Wutpaki National Park, Zion National Park and the Tucson University.}
+
+\cventry{March 2007}{English course}{}{Malta}{}{}
+
+\cventry{2002-2004}{English summer courses abroad}{}{London}{}{Summer courses held in
+international schools.}
+% section interests (end)
+
+\section{Funny things I had the luck to do}
+\cventry{2014-present}{Guitar}{Yoga Background Noise}{}{}{Punk / Funky / Rock.}
+\cventry{2012}{You're the chef}{University of Illinois at Chicago}{}{}{Annual student cooking competition, second place. Almost there!}
+\cventry{2009}{Vespa Tour}{}{}{}{Great travel experience! Corse (France) tour on a Vespa PX 125 scooter.}
+\cventry{2008-2011}{Guitar}{The Flyin' Carpets}{}{}{Classic Rock / Funky / Pop music band.}
+\cventry{2007}{Guitar}{Unstabilo Boss}{}{}{Classic Rock / Punk music band.}
+\cventry{2008-2009}{Students' Representative}{Scientific Lyceum Leonardo da Vinci}{}{}{}
+\cventry{2008}{Chief Director}{school newspaper ``Senza Filtro''}{}{}{}
+\cventry{1999}{Scuba Diving License}{ANIS}{}{}{Italian National Association of Scuba Diving Instructors}
+
+\end{document}
